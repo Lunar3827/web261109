@@ -1,6 +1,46 @@
 const titles = ["킹덤 오브 헤븐", "패션 오브 크라이스트", "나니아 연대기: 사자, 마녀 그리고 옷장", "반지의 제왕: 반지 원정대", "몬티 파이튼의 성배"];
 const ratings = [7.09, 7.53, 7.14, 8.44, 7.80];
 const years = [2004, 2005, 2004, 2001, 1975];
+
+
+// 즉시 실행 함수 만들기
+// (function init(){
+//     console.log("나는 함수다. 실행이 되었다.")
+// })();
+
+
+
+// 화살표 함수
+// const gugudan = (dan) => {
+//     for(let i=1;i<=9;i++){
+//         console.log(`${dan} * ${i}=${dan*i}`);
+//     }
+// }
+
+//함수 표현식
+// const gugudan = function (dan){
+//     for(let i=1;i<=9;i++){
+//         console.log(`{dan} * ${i}=${dan*i}`);
+//     }
+// }
+
+
+//함수 선언문
+// function gugudan(dan){
+//     for(let i=1;i<=9;i++){
+//         console.log(`{dan} * ${i}=${dan*i}`);
+//     }
+// }
+
+gugudan(7);
+
+function add(num1, num2){
+    return num1+num2
+}
+
+console.log(add(111, 2323));
+
+
 let sum = 0;
 for (let i = 0; i < ratings.length; i++) {
     sum = sum + ratings[i];
